@@ -1,0 +1,36 @@
+{
+    "home" : { 
+        "path" : "app/views/home.php",
+        "sessionKey": [{"idUsuario": false}], 
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true},
+        "errorPath" : "app/views/erro.php"
+    },
+    "admin" : { 
+        "path" : "app/views/admin.php",
+        "sessionKey": [{"idUsuario": true}], 
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true},
+        "errorPath" : "app/views/erro.php"
+    },
+    "api/acoes" : { 
+        "path" : "app/controllers/AcaoController.php",
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true}
+    },
+    "api/login" : { 
+        "path" : "app/controllers/AuthController.php",
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true}
+    },
+    "api/familias" : { 
+        "path" : "app/controllers/FamiliaController.php",
+        "sessionKey": [{"idUsuario": true}], 
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true}
+    },
+    "api/solicitacoes" : { 
+        "path" : "app/controllers/SolicitacaoController.php",
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true}
+    },
+    "api/admin/doacoes" : { 
+        "path" : "app/controllers/AdminDoacaoController.php",
+        "sessionKey": [{"idUsuario": true}],
+        "sanitize"  : {"requestVars" : true, "code" : true, "sql" : true}
+    }
+}
